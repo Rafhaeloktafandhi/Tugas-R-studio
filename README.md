@@ -10,4 +10,3 @@
 - Tugas 7: membandingkan full model dan reduced model.
 - Tugas 8: melakukan Uji Normalitas dengan Shapiro Wilk, Uji Homoskedastisitas dengan Breusch Pagan, Uji Independent dengan Durbin Watson, dan Linearitas
 - Tugas 9: mencari nilai RMSE dari model full dan model reduced
--  
