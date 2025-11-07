@@ -1,3 +1,6 @@
+rm(list=ls())
+data1<-read.csv(file="Model Linier/Students_Grading_Dataset.csv", sep = ";")
+
 y_hat <- b0 + b1 * x1
 
 # Residual (selisih antara nilai asli dan prediksi)
@@ -27,4 +30,5 @@ cat("Standard Error b1:", SE_b1, "\n")
 cat("t value:", t_value, "\n")
 cat("p-value:", p_value, "\n")
 cat("95% Confidence Interval for b1: [", CI_lower, ",", CI_upper, "]\n")
+
 
