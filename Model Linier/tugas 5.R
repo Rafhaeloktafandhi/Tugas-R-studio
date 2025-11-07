@@ -1,3 +1,6 @@
+rm(list=ls())
+data1<-read.csv(file="Model Linier/Students_Grading_Dataset.csv", sep = ";")
+
 # Fitted model regresi Total_Score ~ x_binary
 model <- lm(Total_Score ~ x_binary, data = data1)
 summary(model)
@@ -26,5 +29,6 @@ data_clean <- na.omit(data1[, c("Total_Score", "x_binary")])
 # Hitung rata-rata Total_Score untuk setiap kategori x_binary
 aggregate(Total_Score ~ x_binary, data = data_clean, mean)
 tapply(data_clean$Total_Score, data_clean$x_binary, mean)
+
 
 
