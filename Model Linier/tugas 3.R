@@ -1,3 +1,6 @@
+rm(list=ls())
+data1<-read.csv(file="Model Linier/Students_Grading_Dataset.csv", sep = ";")
+
 # Rata-rata y
 y_mean <- mean(y)
 
@@ -37,4 +40,5 @@ cat("df1 (regression):", df1, "\n")
 cat("df2 (residual):", df2, "\n")
 cat("F-statistic:", F_value, "\n")
 cat("p-value:", p_value_F, "\n")
+
 
