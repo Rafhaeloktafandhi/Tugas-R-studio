@@ -1,5 +1,5 @@
 rm(list=ls())
-data1<-read.csv(file="D:/New folder/Students_Grading_Dataset.csv", sep = ";")
+data1<-read.csv(file="Model Linier/Students_Grading_Dataset.csv", sep = ";")
 
 x_binary <- ifelse(data1$Gender == "Female", 0, 1)
 
@@ -22,3 +22,4 @@ cat("Var(x):", var_x, "\n")
 cat("Var(y):", var_y, "\n")
 cat("Koefisien regresi b1 (slope):", b1, "\n")
 cat("Koefisien regresi b0 (intercept):", b0, "\n")
+
