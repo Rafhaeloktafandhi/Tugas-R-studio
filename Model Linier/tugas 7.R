@@ -1,4 +1,7 @@
 rm(list=ls())
+data2 <- read.xlsx("Model Linier/hasil_preprocessing_modlin.xlsx")
+
+rm(list=ls())
 data1<-read.csv(file="D:/New folder/Students_Grading_Dataset.csv", sep = ";")
 
 x_binary <- ifelse(data1$Gender == "Female", 0, 1)
@@ -18,4 +21,5 @@ anova(model_A)
 model_B <- lm(y ~ x4 + x +  x4*x + I(x**2), data = data2)
 anova(model_B)
 anova(model_A, model_B)
+
 
