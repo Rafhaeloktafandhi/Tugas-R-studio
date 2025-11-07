@@ -3,7 +3,7 @@ install.packages("ggplot2")
 install.packages("openxlsx") # kalau belum
 library(openxlsx)
 rm(list=ls())
-data2 <- read.xlsx("D:/New folder/hasil_preprocessing_modlin.xlsx")
+data2 <- read.xlsx("Model Linier/hasil_preprocessing_modlin.xlsx")
 
 names(data2)
 x_binary <- ifelse(data2$Family_Income_Level == "Female", 0, 1)
@@ -27,3 +27,4 @@ summary(model2)
 # Tampilkan estimasi koefisien (b0, b1, b2)
 coefficients(model)
 coefficients(model1)
+
